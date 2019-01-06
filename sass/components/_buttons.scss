@@ -1,4 +1,8 @@
-a{
+.btn{
     color: white;
-    list-style-type: none;
+    background: var(--color-2);
+    text-decoration: none;
+    padding: .5rem 2rem;
+    margin-top: 1rem;
+    align-self: flex-start;
 }

@@ -4,5 +4,26 @@
     background-position: center;
     background-size: cover;
     min-height: 100vh;
-    color: #f2f2f2;
+    color: var(--color-light);
+
+    &__nav{
+        background: var(--color-2);
+        padding: .5rem;
+        
+        ul{
+            display: none;
+        }
+    }
+
+    &__title{
+        padding: 1rem;
+        transform: translateY(30%);
+        display: flex;
+        flex-direction: column;
+
+        h1{
+            font-style: italic;
+            margin-bottom: .5rem;
+        }
+    }
 }
