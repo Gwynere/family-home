@@ -1,11 +1,31 @@
 .home{
 
+    @media only screen and (min-width: 768px) {
+        width: 80%;
+        margin: 5rem auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+
+        .span{
+            grid-column: span 4;
+        }
+    }
+
+    @media only screen and (min-width: 1440px){
+        grid-template-columns: repeat(4, 1fr);
+
+        .span{
+            grid-column: span 2;
+        }
+    }
+
     &__parts{
 
         &__part{
             position: relative;
             height: 20rem;
             width: 100%;
+            grid-column: span 2;
 
             img{
                 width: 100%;
@@ -22,12 +42,34 @@
             }
         }
 
+
+
     }
 }
 
 .about-us{
 
+    @media only screen and (min-width: 768px) {
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        // .span{
+        //     grid-column: span 4;
+        // }
+    }
+
+    @media only screen and (min-width: 1440px){
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     &__our-team{
+        @media only screen and (min-width: 768px) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: .5rem;
+        }
 
         &__teammate{
             position: relative;
@@ -53,7 +95,7 @@
                 height: 100%;
                 justify-content: center;
                 display: none;
-                
+
 
                 &__title{
                     padding: 2rem;
@@ -77,6 +119,9 @@
 
 .title{
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     h2{
         font-size: 2rem;
@@ -90,6 +135,15 @@
 }
 
 .contacts{
+
+    @media only screen and (min-width: 768px) {
+        width: 80%;
+        margin: 5rem auto;
+    }
+
+    @media only screen and (min-width: 1440px){
+        width: 60%;
+    }
 
     &__contact{
         padding: 1.5rem;
@@ -105,5 +159,11 @@
                 width: 1rem;
             }
         }
+    }
+}
+
+.section{
+    @media only screen and (min-width: 1500px){
+        width: 1440px;
     }
 }
